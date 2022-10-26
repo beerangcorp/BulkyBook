@@ -1,0 +1,31 @@
+﻿@model IEnumerable<BulkyBook.Model.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="container p-3">
+    <div class="container p-4">
+            <div class="container p-6 text-end">
+            <a asp-action="Upsert" asp-controller="Product" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>&nbsp Create CoverType</a>
+            </div>
+    </div>
+
+<table Id="newData" class="table table-bordered table table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>Price</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th></th>
+        </tr>
+    </thead>
+ 
+</table>
+ </div>
+@section Scripts{
+<script src="~/js/product.js"></script>
+}
